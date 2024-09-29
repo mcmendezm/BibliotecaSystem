@@ -19,22 +19,22 @@ public class Main {
 
             // Pruebas con libros
             // Agregar libros
-            libraryService.agregarLibro("Ulises", "James Joyce", "978-3-16-148411-0", true);
-            libraryService.agregarLibro("En Busca del Tiempo Perdido", "Marcel Proust", "978-3-16-148411-1", true);
+            libraryService.agregarLibro("Crimen y Castigo", "Fiódor Dostoyevski", "978-3-16-148410-7", true);
+            libraryService.agregarLibro("El Gran Gatsby", "F. Scott Fitzgerald", "978-3-16-148410-8", true);
 
             // Mostrar todos los libros
             System.out.println("\nLista de libros:");
             libraryService.mostrarLibros();
 
             // Actualizar un libro
-            libraryService.actualizarLibro(1, "Cien Años de Soledad (Edición Especial volumen 4)", "Gabriel García Márquez", "978-3-16-148410-0", true);
+            libraryService.actualizarLibro(1, "Cien Años de Soledad (Edición Especial volumen 5)", "Gabriel García Márquez", "978-3-16-148410-0", true);
 
             // Mostrar lista de libros actualizado
             System.out.println("\nLista de libros después de la actualización:");
             libraryService.mostrarLibros();
 
             // Eliminar un libro con ID
-            libraryService.eliminarLibro(4);
+            libraryService.eliminarLibro(19);
 
             // Mostrar lista de libros después de la eliminación
             System.out.println("\nLista de libros después de la eliminación:");
@@ -42,22 +42,22 @@ public class Main {
 
             // Pruebas con usuarios
             // Registrar usuarios (ajusta la llamada eliminando el email)
-            userService.registrarUsuario("Emanuel", "Garcia", "password123");
-            userService.registrarUsuario("Daniel", "Ramirez", "password456");
+            userService.registrarUsuario("Julian", "Caicedo", "password789");
+            userService.registrarUsuario("Tiberio", "Ospina", "password012");
 
             // Mostrar todos los usuarios
             System.out.println("\nLista de usuarios:");
             userService.mostrarUsuarios();
 
             // Actualizar un usuario (suponiendo que el ID del usuario a actualizar es 1)
-            userService.actualizarUsuario(1, "Juan", "Pérez Actualizado");
+            userService.actualizarUsuario(1, "Juan", "Pérez Actualizado 2");
 
             // Mostrar lista de usuarios después de la actualización
             System.out.println("\nLista de usuarios después de la actualización:");
             userService.mostrarUsuarios();
 
             // Eliminar un usuario con ID
-             userService.eliminarUsuario(3);
+             userService.eliminarUsuario(5);
 
             // Mostrar lista de usuarios después de la eliminación
             System.out.println("\nLista de usuarios después de la eliminación:");
